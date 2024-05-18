@@ -5,6 +5,17 @@ import App from './App';
 
 import '@fontsource-variable/inter';
 
+declare global {
+  interface Window {
+    mp: {
+      events: {
+        add: (eventName: string, callback: Function) => void;
+      },
+      invoke: (eventName: string, ...args: any[]) => void;
+    }
+  }
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
