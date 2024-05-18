@@ -4,6 +4,9 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography: {
+    fontFamily: 'Inter Variable, sans-serif',
+  },
 });
 
 function App() {
